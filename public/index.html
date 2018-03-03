@@ -2,56 +2,69 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Sample FirebaseUI App</title>
-	
-	
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.10.1/firebase-app.js"></script>
+    <title>
+      Sample FirebaseUI App
+    </title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.10.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.10.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.10.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.10.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-	
-	<!-- Useful ui stuff for authentication -->
-	<script src="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.js"></script>
-	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.css" />
-
-	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-
-	<script src="auth.js"></script>
-	<script src="init.js"></script>
-	<script src="login.js"></script>
-	<script src="ids.js"></script>
-	
-	
-	  <style>
-		  .hidden {
-			display:none;
-		  }
-	  </style>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
+    
+    <!-- Initialize Firebase after all desired features are loaded -->
+    <script src="init.js"></script>
+    
+    <!-- Useful ui stuff for authentication -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.css">
+    <script src="auth/auth.js"></script>
+    <script src="auth/login.js"></script>
+    <script src="auth/ids.js"></script>
+    
+    <!-- Support for Posting -->
+    <script src="posting/post.js"></script>
+    <script src="posting/ids.js"></script>
+    
+    
+    <style>
+                  .hidden {
+                        display:none;
+                  }
+    </style>
   </head>
-
-  
   <body>
-    <h1>Welcome to My Awesome App</h1>
-	<div id="firebaseui-auth-container"></div>
-	
-	<div id="account-container" class="hidden">
+    <h1>
+      Welcome to My Awesome App
+    </h1>
+    <div id="firebaseui-auth-container"></div>
+    <div id="logged-in-container" class="hidden">
+      <div id="account-container" >
         <div id="user-info">
-		  <div id="photo-container">
-			<img id="photo" src="" style="display: block;">
-		  </div>
-		  <div id="user_name"></div>
-		  <div id="email"></div>
-		  <div id="phone"></div>
-		  <div class="clearfix"></div>
-		</div>
-		<p>
-		  <button id="sign-out">Sign Out</button>
-		</p>
-	</div>
+          <div id="photo-container">
+            <img id="photo" src="" style="display: block;">
+          </div>
+          <div id="user_name"></div>
+          <div id="email"></div>
+          <div id="phone"></div>
+          <div class="clearfix"></div>
+        </div>
+        <p>
+          <button id="sign-out">Sign Out</button>
+        </p>
+      </div>
+      <div>
+        <button id="post-button">New Post</button>
+      </div>
+      <div id="posting-container">
+        <div id="example-posting" class="hidden posting">
+           <div class="posting-id hidden"></div>
+          <div class="posting-name">Example Post!</div>
+        </div>
+      </div>
+      
+    </div>
   </body>
 </html>
