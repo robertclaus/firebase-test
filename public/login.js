@@ -7,8 +7,8 @@ login = function(user, accessToken) {
 	var uid = user.uid;
 	var phoneNumber = user.phoneNumber;
 	var providerData = user.providerData;
-	console.log(accessToken);
 	document.getElementById(id_accountcontainer).classList.remove(css_hiddenclass);
+	document.getElementById(id_username).innerHTML = user.displayName;
 }
 
 logout = function() {
