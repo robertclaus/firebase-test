@@ -1,0 +1,32 @@
+[debug] [2018-03-02T23:02:13.330Z] ----------------------------------------------------------------------
+[debug] [2018-03-02T23:02:13.333Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Robert\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-02T23:02:13.333Z] CLI Version:   3.17.4
+[debug] [2018-03-02T23:02:13.333Z] Platform:      win32
+[debug] [2018-03-02T23:02:13.333Z] Node Version:  v8.9.4
+[debug] [2018-03-02T23:02:13.334Z] Time:          Fri Mar 02 2018 17:02:13 GMT-0600 (Central Standard Time)
+[debug] [2018-03-02T23:02:13.334Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-02T23:02:13.349Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-02T23:02:13.349Z] > authorizing via signed-in user
+[debug] [2018-03-02T23:02:13.352Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/staffer-88d4c  
+  
+ Fri Mar 02 2018 17:02:13 GMT-0600 (Central Standard Time)
+[debug] [2018-03-02T23:02:13.800Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:02:13.801Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/staffer-88d4c/tokens  
+  
+ Fri Mar 02 2018 17:02:13 GMT-0600 (Central Standard Time)
+[debug] [2018-03-02T23:02:14.286Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'A:\Staffer'...
+[info] 
+[debug] [2018-03-02T23:02:14.290Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/staffer-88d4c  
+  
+ Fri Mar 02 2018 17:02:14 GMT-0600 (Central Standard Time)
+[debug] [2018-03-02T23:02:14.646Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-02T23:02:14.647Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/369949174283/clients/_:getWebAppConfig  
+  
+ Fri Mar 02 2018 17:02:14 GMT-0600 (Central Standard Time)
+[debug] [2018-03-02T23:02:15.090Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
