@@ -8,3 +8,7 @@ css_hiddenclass = "hidden";
 
 // User Display Fields
 id_username = "user_name";
+
+
+//Javascript Variables to Reference for User
+user_id = -1;

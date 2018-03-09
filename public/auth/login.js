@@ -4,7 +4,7 @@ login = function(user, accessToken) {
 	var email = user.email;
 	var emailVerified = user.emailVerified;
 	var photoURL = user.photoURL;
-	var uid = user.uid;
+	user_id = user.uid;
 	var phoneNumber = user.phoneNumber;
 	var providerData = user.providerData;
 	document.getElementById(id_loggedincontainer).classList.remove(css_hiddenclass);

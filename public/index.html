@@ -17,6 +17,9 @@
     <!-- Initialize Firebase after all desired features are loaded -->
     <script src="init.js"></script>
     
+    <!-- UI handling support -->
+    <script src="collectionList.js"></script>
+    
     <!-- Useful ui stuff for authentication -->
     <script src="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.2/firebaseui.css">
@@ -55,13 +58,37 @@
           <button id="sign-out">Sign Out</button>
         </p>
       </div>
-      <div>
-        <button id="post-button">New Post</button>
-      </div>
-      <div id="posting-container">
-        <div id="example-posting" class="hidden posting">
-           <div class="posting-id hidden"></div>
-          <div class="posting-name">Example Post!</div>
+      
+      <div id="posting-list">
+        <div class="create-form">
+          <div class="posting-create-title" contenteditable="true">Place title here!</div>
+          <div class="posting-create-description" contenteditable="true">Place description here!</div>
+          <button class="posting-create">New Post</button>
+        </div>
+        <div class="container">
+          <div class="example hidden posting">
+            <div class="posting-id hidden"></div>
+            
+            <div class="posting-title">Example Title!</div>
+            <div class="posting-description">Example Post!</div>
+            <div class="posting-createdByUserId">Example UID</div>
+            <button class="posting-delete">X</button>
+            <div id="response-list" class="hidden">
+              <div class="create-form">
+                <div class="response-create-content" contenteditable="true">Place Response Content here!</div>
+                <button class="response-create">New Post</button>
+              </div>
+            
+              <div id="response-container">
+                  <div class="example response">
+                    <div class="response-id hidden"></div>
+                    <div class="response-content">Example response!</div>
+                    <button class="response-delete">X</button>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
       
